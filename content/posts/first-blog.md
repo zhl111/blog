@@ -96,7 +96,8 @@ weight: 1
 	- 不要忽略了那个小数点
 - 提交暂存区到本地仓库中：`git commit -m “message”`
 	- [message] 可以是一些备注信息。
-- 下载主题到 themes 目录：`git submodule add https://github.com/hugo-next/hugo-theme-next.git themes/hugo-theme-next`
+- 下载主题到 themes 目录：`git submodule add -b develop https://github.com/hugo-next/hugo-theme-next.git themes/next`
+- - 克隆好后，还要执行一下， `git submodule update --remote` 确认下 hugo-theme-next 目录下是有内容的。
 	- Next 最新的主题似乎还没正式发布，这是一个分支？我还不太明白这些
 	- Next 主题不同于默认的用 `config.toml` 来配置，而是用 `config.yml` 配置主题，据说这个更好用，我也不太懂。
 		- 所以就可以删除 `config.toml` 文件了。
