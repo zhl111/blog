@@ -161,6 +161,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 ```
+- `git add .`
 - `git commit -m “deploy”`
 - `git push`
 	- 此时可能会出现认证的弹出框，我因邮箱写错折腾了许久。
