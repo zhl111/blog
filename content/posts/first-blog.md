@@ -60,7 +60,7 @@ weight: 1
 - 我的电脑是windows系统，所有的软件以此为基础
 - Hugo 下载安装
 	- 打开 Hugo 官方 GitHub 的 [**Releases**](https://github.com/gohugoio/hugo/releases) 页面，选择最新的版本下载（选择  `hugo_xxx_Windows-64bit.zip` 或为了便于修改主题使用 extend 版本）
-	- 将压缩包内的  `hugo.exe`  文件解压至某个文件夹目录下。譬如： `D:\ hugo \`
+	- 将压缩包内的  `hugo.exe`  文件解压至某个文件夹目录下。譬如： `D:\hugo\`
 - 设置 `Hugo` 的环境变量
 	- 在  `文件资源管理器` （即  `我的电脑` ）中空白处点击鼠标右键，打开属性。
 	- 依次点击  `高级系统设置`  -  `环境变量`  ，双击打开系统变量中的  `Path` 。
