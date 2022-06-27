@@ -1,0 +1,11 @@
+{{- with .Site.Params.utterances }}
+{{- if .enable }}
+<script src="https://utteranc.es/client.js" 
+repo="{{ .repo }}" 
+issue-term="{{ .issueTerm }}" 
+label="{{ .label }}" 
+crossorigin="anonymous" 
+theme="{{ .theme }}" async>
+</script>
+{{- end }}
+{{- end }}
