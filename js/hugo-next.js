@@ -14,7 +14,7 @@ if (!window.NexT) window.NexT = {};
     "bookmark"   : {"color":"#222","enable":true,"save":"auto"},
     "comments"   : {"active":"utterances","enable":true,"nav":[{"color":"#27ae60","name":"Waline","title":"Waline","weight":2},{"color":"#886ce4","name":"Utterances","title":"Utteranc","weight":1}],"storage":true},
     "mediumzoom" : true,
-    "lazyload"   : true,
+    "lazyload"   : false,
     "pangu"      : false,
     "stickytabs" : false,
     "motion"     : {"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},
