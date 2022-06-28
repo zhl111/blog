@@ -738,7 +738,7 @@ params:
     imgUploader: false
     wordLimit: 200
     requiredMeta: ['nick', 'mail']
-    serverURL: #<your waline server url>
+    serverURL: https://waling-2g9fan8hd-zhl111.vercel.app/
 
   # Disqus
   # For more information: https://disqus.com
