@@ -18,7 +18,7 @@
 <span class=post-meta-item><span class=post-meta-item-icon><i class="far fa-folder-open"></i></span>
 <span class=post-meta-item-text>分类于：</span>
 <span itemprop=about itemscope itemtype=http://schema.org/Thing><a href=../../categories/%E5%8D%9A%E5%AE%A2 itemprop=url rel=index><span itemprop=name>博客</span></a></span></span></div><div class=post-meta-items><span class=post-meta-item title=字数><span class=post-meta-item-icon><i class="far fa-file-word"></i></span>
-<span class=post-meta-item-text>字数：</span><span>2626</span></span>
+<span class=post-meta-item-text>字数：</span><span>2653</span></span>
 <span class=post-meta-item title=阅读><span class=post-meta-item-icon><i class="far fa-clock"></i></span>
 <span class=post-meta-item-text>阅读：&ap;</span>
 <span>6分钟</span></span>
@@ -42,34 +42,61 @@
 <i class="fa fa-external-link-alt"></i></a> 创建仓库 blog</li><li>添加远程版本库：<code>git remote add origin https://github.com/你的用户名/blog.git</code></li><li>将本地的分支版本上传到远程并合并：<code>git push -u origin main</code><ul><li>输入 github 的密码</li></ul></li><li>用 sublime text 在 blog 目录建立文件 `. github /workflows/gh-pages.yml<ul><li>其实直接在 <code>blog</code> 目录下建立文件夹 <code>.github</code>，打开它再建立文件夹 <code>workflows</code>，新建文件 <code>gh-pages.yml</code>, 文件名可随意。</li><li>拷贝代码，在 hugo 网站 docs→ hugo to github
 <a href=https://gohugo.io/hosting-and-deployment/hosting-on-github/ title="Host on GitHub | Hugo" rel="noopener external nofollow noreferrer" target=_blank class=exturl>Host on GitHub | Hugo
 <i class="fa fa-external-link-alt"></i>
-</a>，完全不用任何修改。</li></ul></li></ul><pre tabindex=0><code>name: github pages
-on:
-  push:
-    branches:
-      - main  # Set a branch to deploy
-  pull_request:
-jobs:
-  deploy:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: &#39;latest&#39;
-          # extended: true
-      - name: Build
-        run: hugo --minify
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == &#39;refs/heads/main&#39;
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-</code></pre><ul><li><code>git add .</code></li><li><code>git commit -m “deploy”</code></li><li><code>git push</code><ul><li>此时可能会出现认证的弹出框，我因邮箱写错折腾了许久。</li></ul></li><li>查看github Actions里的<code>deploy</code>运行是否正常：<img src=https://raw.githubusercontent.com/zhl111/upgit/main/2022/06/upgit_20220627_1656321977.png alt=upgit_20220627_1656321977.png></li><li>将 blog 分支改为 <code>gs-pages</code> <img src=https://raw.githubusercontent.com/zhl111/upgit/main/2022/06/upgit_20220627_1656322094.png alt=upgit_20220627_1656322094.png></li><li>将code处的分支改为<code>main</code> <img src=https://raw.githubusercontent.com/zhl111/upgit/main/2022/06/upgit_20220627_1656322026.png alt=upgit_20220627_1656322026.png></li><li>我的 blog 网址： 
+</a>，完全不用任何修改。</li></ul></li></ul><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>name: github pages
+</span></span><span style=display:flex><span>on:
+</span></span><span style=display:flex><span>  push<span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>    branches<span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>-</span> main  <span style=color:#960050;background-color:#1e0010>#</span> Set a branch to deploy
+</span></span><span style=display:flex><span>  pull_request<span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>jobs:
+</span></span><span style=display:flex><span>  deploy<span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>    runs<span style=color:#f92672>-</span>on<span style=color:#f92672>:</span> ubuntu<span style=color:#f92672>-</span>20<span style=color:#f92672>.</span><span style=color:#a6e22e>04</span>
+</span></span><span style=display:flex><span>    steps<span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>-</span> uses<span style=color:#f92672>:</span> actions<span style=color:#f92672>/</span>checkout<span style=color:#a6e22e>@v2</span>
+</span></span><span style=display:flex><span>        with<span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>          submodules<span style=color:#f92672>:</span> <span style=color:#66d9ef>true</span>  <span style=color:#960050;background-color:#1e0010>#</span> Fetch Hugo <span style=color:#a6e22e>themes</span> <span style=color:#f92672>(</span><span style=color:#66d9ef>true</span> OR recursive<span style=color:#f92672>)</span>
+</span></span><span style=display:flex><span>          fetch<span style=color:#f92672>-</span>depth<span style=color:#f92672>:</span> 0    <span style=color:#960050;background-color:#1e0010>#</span> Fetch all history <span style=color:#66d9ef>for</span> <span style=color:#f92672>.</span><span style=color:#a6e22e>GitInfo</span> and <span style=color:#f92672>.</span><span style=color:#a6e22e>Lastmod</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>-</span> name<span style=color:#f92672>:</span> Setup Hugo
+</span></span><span style=display:flex><span>        uses<span style=color:#f92672>:</span> peaceiris<span style=color:#f92672>/</span>actions<span style=color:#f92672>-</span>hugo<span style=color:#a6e22e>@v2</span>
+</span></span><span style=display:flex><span>        with<span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>          hugo<span style=color:#f92672>-</span>version<span style=color:#f92672>:</span> <span style=color:#960050;background-color:#1e0010>&#39;</span>latest<span style=color:#960050;background-color:#1e0010>&#39;</span>
+</span></span><span style=display:flex><span>          <span style=color:#960050;background-color:#1e0010>#</span> extended<span style=color:#f92672>:</span> <span style=color:#66d9ef>true</span>
+</span></span><span style=display:flex><span>      <span style=color:#f92672>-</span> name<span style=color:#f92672>:</span> Build
+</span></span><span style=display:flex><span>        run<span style=color:#f92672>:</span> hugo <span style=color:#f92672>--</span>minify
+</span></span><span style=display:flex><span>      <span style=color:#f92672>-</span> name<span style=color:#f92672>:</span> Deploy
+</span></span><span style=display:flex><span>        uses<span style=color:#f92672>:</span> peaceiris<span style=color:#f92672>/</span>actions<span style=color:#f92672>-</span>gh<span style=color:#f92672>-</span>pages<span style=color:#a6e22e>@v3</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span><span style=color:#f92672>:</span> github<span style=color:#f92672>.</span><span style=color:#a6e22e>ref</span> <span style=color:#f92672>==</span> <span style=color:#960050;background-color:#1e0010>&#39;</span>refs<span style=color:#f92672>/</span>heads<span style=color:#f92672>/</span>main<span style=color:#960050;background-color:#1e0010>&#39;</span>
+</span></span><span style=display:flex><span>        with<span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>          github_token<span style=color:#f92672>:</span> $<span style=color:#f92672>{{</span> secrets<span style=color:#f92672>.</span><span style=color:#a6e22e>GITHUB_TOKEN</span> <span style=color:#f92672>}}</span>
+</span></span><span style=display:flex><span>          publish_dir<span style=color:#f92672>:</span> <span style=color:#f92672>./</span><span style=color:#66d9ef>public</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li><code>git add .</code></li><li><code>git commit -m “deploy”</code></li><li><code>git push</code><ul><li>此时可能会出现认证的弹出框，我因邮箱写错折腾了许久。</li></ul></li><li>查看github Actions里的<code>deploy</code>运行是否正常：<img src=https://raw.githubusercontent.com/zhl111/upgit/main/2022/06/upgit_20220627_1656321977.png alt=upgit_20220627_1656321977.png></li><li>将 blog 分支改为 <code>gs-pages</code> <img src=https://raw.githubusercontent.com/zhl111/upgit/main/2022/06/upgit_20220627_1656322094.png alt=upgit_20220627_1656322094.png></li><li>将code处的分支改为<code>main</code> <img src=https://raw.githubusercontent.com/zhl111/upgit/main/2022/06/upgit_20220627_1656322026.png alt=upgit_20220627_1656322026.png></li><li>我的 blog 网址： 
 <a href=https://zhl111.github.io/blog/ title=https://zhl111.github.io/blog/ rel="noopener external nofollow noreferrer" target=_blank class=exturl>https://zhl111.github.io/blog/
 <i class="fa fa-external-link-alt"></i></a></li><li>改域名：略吧…这教程不少。到此就算完成了，剩下的就是各种调试主题的时间，等主题调试完成就该安心地写点东西了……</li></ul><p>这里还要说一句，之前的弯路走的特别的多，主要还是有很多人是把文章源文件单独放到一个仓库里，可以不公开，也方便管理。但是，他们的方法都很复杂，有的是要公钥、私钥，有的是要TOKEN设置。也遇到教程跟现在的网页不对应问题等等，我这啥也不懂的小白就被绕了进去，反反复复安装了几十遍。</p><p>我这个教程既实现了源文件仓库与发布网站仓库的分离，实现起来的过程还相当简洁，我自己还挺满意的。</p><h2 id=参考链接>参考链接：</h2><ul><li><a href=https://theme-next.js.org/docs/theme-settings/#Configuring-Menu-Items title="主题设置 | NexT" rel="noopener external nofollow noreferrer" target=_blank class=exturl>主题设置 | NexT
 <i class="fa fa-external-link-alt"></i></a> 2022/6/27</li></ul></div><footer class=post-footer><div class=post-tags><a href=IT>IT</a>
