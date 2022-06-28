@@ -339,7 +339,8 @@ params:
     copyright:
 
     # Powered by Hexo & NexT
-    powered: false
+    powered: true
+
     # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
     beian:
       enable: true
@@ -350,21 +351,21 @@ params:
       gonganNum: 31011402009770
       # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
       #gongan_icon_url:
-    vendors:
-      title: 提供CDN/云资源支持
-      list:
-        - name: Vercel
-          image: 
-            url: /imgs/vendors/vercel.svg
-            width: 50
-          link: https://vercel.com
-        - name: 又拍云
-          image: 
-            url: /imgs/vendors/upyun.png
-            width: 43
-          link: https://upyun.com
-        - name: Webify
-          link: https://webify.cloudbase.net
+    # vendors:
+    #  title: 提供CDN/云资源支持
+    #  list:
+    #    - name: Vercel
+    #      image: 
+    #        url: /imgs/vendors/vercel.svg
+    #        width: 50
+    #      link: https://vercel.com
+    #    - name: 又拍云
+    #      image: 
+    #        url: /imgs/vendors/upyun.png
+    #        width: 43
+    #      link: https://upyun.com
+    #    - name: Webify
+    #      link: https://webify.cloudbase.net
 
 
   # ---------------------------------------------------------------
