@@ -99,11 +99,11 @@ menus:
       pageref: /posts
       pre: archive
       weight: 3
-    - identifier: commonweal
-      name: 公益 404
-      url: /404.html
-      pre: heartbeat
-      weight: 4
+#    - identifier: commonweal
+#      name: 公益 404
+#      url: /404.html
+#      pre: heartbeat
+#      weight: 4
 
 params:
   mainSections: ["posts"]
