@@ -30,7 +30,7 @@ tags:
 # 在当前页面开启或关闭评论功能
 # Switch to enabled or disabled comment plugins in this post
 comment:
-enable: true
+	enable: true
 # 开启文章目录功能
 # Enable table of content
 toc: true
@@ -131,7 +131,7 @@ weight: 1
 	- 其实直接在 `blog` 目录下建立文件夹 `.github`，打开它再建立文件夹 `workflows`，新建文件 `gh-pages.yml`, 文件名可随意。
 	- 拷贝代码，在 hugo 网站 docs→ hugo to github
 	[Host on GitHub | Hugo](https://gohugo.io/hosting-and-deployment/hosting-on-github/)，完全不用任何修改。
-```java
+```go
 name: github pages
 on:
   push:
