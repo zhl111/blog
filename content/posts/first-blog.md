@@ -7,10 +7,10 @@ date: 2022-06-26T21:50:50+08:00
 lastmod: 2022-06-26T21:50:50+08:00
 
 categories:
- -
+ - 博客
 tags:
   - IT
-  -
+  - 教程
 
 # 原文作者
 # Post's origin author name
@@ -29,11 +29,11 @@ tags:
 # extlink:
 # 在当前页面开启或关闭评论功能
 # Switch to enabled or disabled comment plugins in this post
-# comment:
-# enable: true
+comment:
+enable: true
 # 开启文章目录功能
 # Enable table of content
-# toc: true
+toc: true
 # 绝对访问路径
 # Absolute link for visit
 # url: "first-blog.html"
@@ -59,20 +59,21 @@ weight: 1
 # 1. 准备工作
 - 我的电脑是windows系统，所有的软件以此为基础
 - Hugo 下载安装
-	- 打开 Hugo 官方 GitHub 的 [**Releases**](https://github.com/gohugoio/hugo/releases) 页面，选择最新的版本下载（选择  `hugo_xxx_Windows-64bit.zip` 或为了便于修改主题使用 extend 版本）
-	- 将压缩包内的  `hugo.exe`  文件解压至某个文件夹目录下。譬如： `D:\hugo\`
+	- 打开 Hugo 官方 GitHub 的[**Releases**](https://github.com/gohugoio/hugo/releases)页面，选择最新的版本下载（选择`hugo_xxx_Windows-64bit.zip` 或为了便于修改主题使用 extend 版本）
+	- 将压缩包内的  `hugo.exe` 文件解压至某个文件夹目录下。譬如： `D:\hugo\`
 - 设置 `Hugo` 的环境变量
-	- 在  `文件资源管理器` （即  `我的电脑` ）中空白处点击鼠标右键，打开属性。
-	- 依次点击  `高级系统设置`  -  `环境变量`  ，双击打开系统变量中的  `Path` 。
-	- 在环境变量界面中双击空白行，添加  `D:\hugo\` ，点击确定。
+	- 在 `文件资源管理器` （即 `我的电脑` ）中空白处点击鼠标右键，打开属性。
+	- 依次点击 `高级系统设置` -`环境变量` ，双击打开系统变量中的 `Path` 。
+	- 在环境变量界面中双击空白行，添加 `D:\hugo\` ，点击确定。
 	- 打开命令提示符，输入语句： `hugo version`  。以确认 Hugo 是否安装成功（如果安装成功就能看到版本号）
 - Git 下载安装
 	- 打开 [Git](https://git-scm.com/) 官方页面，选择相应版本。为了不增加电脑负担，我选择了 64 位的 Portable 版本，代价是使用相对复杂。
 	- 启动 `git-cmd.exe` 
 - [GitHub Desktop ](https://desktop.github.com/) 这个软件是因为主题名称没设置对，其他文件都上传了，唯独 `themes` 里的文件无法上传，就下了这个软件。虽然没解决问题，但解决了另一个问题：我一直以为 Github 的邮箱是另外一个，导致无数次的失败……
 	- 后来发现同步本地与远端，上传网站文件很方便，适合小白。
-- Sublime Text 下载安装
+- Sublime Text 下载安装
 	- 一个轻量、简洁、高效、跨平台的编辑器。其实别的方式也可以 完成后续的步骤。
+
 # 2. 本地blog搭建
 - 创建站点
 	- 切换至相应目录下，使用如下语句： `hugo new site blog` 。这将在一个叫  `blog`  的文件夹内创建一个新的 Hugo 站点。然后 hugo 会自动生成这样一个目录结构：
@@ -112,13 +113,14 @@ weight: 1
 		- 默认的 `config.toml` blog 网址设置： `baseURL = 'a. Happy2008. Top'`、theme是：`title = 'hugo -theme-next'`
 # 4. blog文章创建及发布
 - 使用如下命令，创建一篇文章：`hugo new posts/my-first-post.md`
-- 启动 Hugo 本地预览服务：`hugo server -D`
+- 启动Hugo本地预览服务：`hugo server -D`
 - 打开 [**http://localhost:1313/**](http://localhost:1313/) ，即可看到实时预览的站点（在本地的任何修改，将即时更新）。
 - 可以多建几个文件，再次检查页面
 - 查看上次提交之后是否有对文件进行再次修改。`git status`
 - 添加当前目录下的所有文件到暂存区：`git add .`
 - 提交暂存区到本地仓库中：`git commit -m “ready to upload”`
 - 创建分支命令：`git branch -M main`
+
 # 5. 部署到 GitHub
 - 打开 [ GitHub](https://github.com/yourname) 创建仓库 blog
 - 添加远程版本库：`git remote add origin https://github.com/你的用户名/blog.git`
