@@ -15,7 +15,7 @@ if (!window.NexT) window.NexT = {};
     "comments"   : {"active":"utterances","enable":true,"nav":[{"color":"#27ae60","name":"Waline","title":"Waline","weight":2},{"color":"#886ce4","name":"Utterances","title":"Utteranc","weight":1}],"storage":true},
     "mediumzoom" : false,
     "lazyload"   : false,
-    "pangu"      : true,
+    "pangu"      : false,
     "stickytabs" : false,
     "motion"     : {"async":true,"enable":true,"transition":{"collheader":"fadeInLeft","postblock":"fadeIn","postbody":"fadeInDown","postheader":"fadeInDown","sidebar":"fadeInUp"}},
     // TODO Find prismjs 
