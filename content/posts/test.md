@@ -20,6 +20,12 @@ weight: 2
 [Hugo](https://gohugo.io/) 是现今世界上最快的网站建设框架，也是最流行的开源静态站点生成器之一。 凭借其惊人的速度和灵活性，Hugo 让建设网站再次变得有趣起来。
 
 - 创建分支命令：`git branch -M main`
+- 可以多建几个文件，再次检查页面
+- 查看上次提交之后是否有对文件进行再次修改。`git status`
+- 添加当前目录下的所有文件到暂存区：`git add .`
+- 提交暂存区到本地仓库中：`git commit -m “ready to upload”`
+- 创建分支命令：`git branch -M main`
+
 
 <!--more-->
 
