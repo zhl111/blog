@@ -795,7 +795,7 @@ params:
     enable: true
     repo: zhl111/blog # Github repository owner and name
     # Available values: pathname | url | title | og:title
-    issue-term: pathname
+    issueTerm: pathname
     label: 
     # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
     theme: preferred-color-scheme
