@@ -30,7 +30,7 @@ tags:
 # 在当前页面开启或关闭评论功能
 # Switch to enabled or disabled comment plugins in this post
 comment:
-enable: true
+# enable: true
 # 开启文章目录功能
 # Enable table of content
 toc: true
