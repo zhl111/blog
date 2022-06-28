@@ -56,6 +56,7 @@ weight: 1
 - 其五，个人电脑系统不同。Mac与Windows系统对应教程的差异，不利于小白一步一趋的跟随。
 
 主题的部署难度相对要小一些。主要是 `theme`、`baseURL` 的名称要搞对，多看说明文档。虽然还有很多不懂没搞明白的，但只要网站搭建起来，后期再慢慢调试吧。
+
 # 1. 准备工作
 - 我的电脑是windows系统，所有的软件以此为基础
 - Hugo 下载安装
@@ -130,7 +131,7 @@ weight: 1
 	- 其实直接在 `blog` 目录下建立文件夹 `.github`，打开它再建立文件夹 `workflows`，新建文件 `gh-pages.yml`, 文件名可随意。
 	- 拷贝代码，在 hugo 网站 docs→ hugo to github
 	[Host on GitHub | Hugo](https://gohugo.io/hosting-and-deployment/hosting-on-github/)，完全不用任何修改。
-```
+```java
 name: github pages
 on:
   push:
