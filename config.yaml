@@ -682,7 +682,7 @@ params:
   # Pangu Support
   # For more information: https://github.com/vinta/pangu.js
   # Server-side plugin: https://github.com/next-theme/hexo-pangu
-  pangu: true
+  pangu: false
 
   # Quicklink Support
   # For more information: https://getquick.link
