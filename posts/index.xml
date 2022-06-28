@@ -16,6 +16,4 @@ Hugo
 &lt;li>添加当前目录下的所有文件到暂存区：&lt;code>git add .&lt;/code>&lt;/li>
 &lt;li>提交暂存区到本地仓库中：&lt;code>git commit -m “ready to upload”&lt;/code>&lt;/li>
 &lt;li>创建分支命令：&lt;code>git branch -M main&lt;/code>&lt;/li>
-&lt;/ul></description></item><item><title/><link>https://a.happy2008.top/posts/theme-settings-next/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://a.happy2008.top/posts/theme-settings-next/</guid><description>One of the guiding principles of NexT is to hide complex details and give you a simple but flexible config, so you can use it easily.
-The values given in the document are often typical allowable values rather than default values. They may be different from those in NexT config file.
-NexT Quick Start Cache Support NexT v6+ allows to cache content generation. Set the value enable to true in cache section in NexT config file as following:</description></item></channel></rss>
+&lt;/ul></description></item></channel></rss>
