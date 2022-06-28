@@ -546,7 +546,7 @@ params:
   # `Follow me on GitHub` banner in the top-right corner.
   githubBanner:
     enable: true
-    permalink: https://github.com/yourname
+    permalink: https://github.com/zhl111
     title: Follow me on GitHub
 
 
@@ -609,7 +609,7 @@ params:
 
   # If true, site-subtitle will be added to index page.
   # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
-  index_with_subtitle: false
+  index_with_subtitle: true
 
   # Automatically add external URL with Base64 encrypt & decrypt.
   exturl: 
@@ -664,16 +664,16 @@ params:
 
   # Easily enable fast Ajax navigation on your website.
   # For more information: https://github.com/next-theme/pjax
-  pjax: false
+  pjax: true
 
   # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
   # For more information: https://fancyapps.com/fancybox/
-  fancybox: false
+  fancybox: true
 
   # A JavaScript library for zooming images like Medium.
   # Warning: Do not enable both `fancybox` and `mediumzoom`.
   # For more information: https://medium-zoom.francoischalifour.com
-  mediumzoom: false
+  mediumzoom: true
 
   # Vanilla JavaScript plugin for lazyloading images.
   # For more information: https://apoorv.pro/lozad.js/demo/
@@ -682,18 +682,18 @@ params:
   # Pangu Support
   # For more information: https://github.com/vinta/pangu.js
   # Server-side plugin: https://github.com/next-theme/hexo-pangu
-  pangu: false
+  pangu: true
 
   # Quicklink Support
   # For more information: https://getquick.link
   # Front-matter variable (nonsupport home archive).
   quicklink:
-    enable: false
+    enable: true
 
     # Home page and archive page can be controlled through home and archive options below.
     # This configuration item is independent of `enable`.
-    home: false
-    archive: false
+    home: true
+    archive: true
 
     # Default (true) will initialize quicklink after the load event fires.
     delay: true
@@ -793,7 +793,7 @@ params:
   # For more information: https://utteranc.es
   utterances:
     enable: true
-    repo: username/repo-name # Github repository owner and name
+    repo: zhl111/blog # Github repository owner and name
     # Available values: pathname | url | title | og:title
     issueTerm: pathname
     label: 
