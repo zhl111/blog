@@ -13,7 +13,7 @@ if (!window.NexT) window.NexT = {};
     "copycode"   : {"enable":false,"style":"default"},
     "bookmark"   : {"color":"#222","enable":true,"save":"auto"},
     "comments"   : {"active":"utterances","enable":true,"nav":[{"color":"#27ae60","name":"Waline","title":"Waline","weight":2},{"color":"#886ce4","name":"Utterances","title":"Utteranc","weight":1}],"storage":true},
-    "mediumzoom" : true,
+    "mediumzoom" : false,
     "lazyload"   : false,
     "pangu"      : true,
     "stickytabs" : false,
