@@ -43,13 +43,11 @@
 <a href=https://gohugo.io/hosting-and-deployment/hosting-on-github/ title="Host on GitHub | Hugo" rel="noopener external nofollow noreferrer" target=_blank class=exturl>Host on GitHub | Hugo
 <i class="fa fa-external-link-alt"></i>
 </a>，完全不用任何修改。</li></ul></li></ul><pre tabindex=0><code>name: github pages
-
 on:
   push:
     branches:
       - main  # Set a branch to deploy
   pull_request:
-
 jobs:
   deploy:
     runs-on: ubuntu-20.04
@@ -58,16 +56,13 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: &#39;latest&#39;
           # extended: true
-
       - name: Build
         run: hugo --minify
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == &#39;refs/heads/main&#39;
