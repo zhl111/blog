@@ -9,15 +9,15 @@
   };
   Waline.init({
     locale,
-    el: "#waline",
-    pageview: {{ .pageView }},
-    emoji: {{ .emoji }},
-    imageUploader: {{ .imgUploader }},
-    wordLimit: {{ .wordLimit }},
-    requiredMeta: {{ .requiredMeta }},
-    serverURL: "{{ .serverURL }}",
-    lang: "{{ $.Lang }}",
-    dark: "auto"
+    el            : "#waline",
+    pageview      : {{ .pageView }},
+    emoji         : {{ .emoji }},
+    imageUploader : {{ .imgUploader }},
+    wordLimit     : {{ .wordLimit }},
+    requiredMeta  : {{ .requiredMeta }},
+    serverURL     : "{{ .serverURL }}",
+    lang          : "{{ $.Lang }}",
+    dark          : "auto"
   });
 </script>
-{{- end }}  
+{{- end }}

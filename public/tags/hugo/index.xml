@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on 阿哈吉</title>
+    <link>https://a.happy2008.top/tags/hugo/</link>
+    <description>Recent content in Hugo on 阿哈吉</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 02 Jun 2022 11:52:03 +0800</lastBuildDate><atom:link href="https://a.happy2008.top/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>世界，你好！</title>
+      <link>https://a.happy2008.top/post/hello-world.html</link>
+      <pubDate>Thu, 02 Jun 2022 11:52:03 +0800</pubDate>
+      
+      <guid>https://a.happy2008.top/post/hello-world.html</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;“让&lt;code&gt;无聊的人生&lt;/code&gt;再次变得有趣起来。”&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
