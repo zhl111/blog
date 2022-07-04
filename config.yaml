@@ -15,7 +15,7 @@
 baseURL: https://a.happy2008.top
 # 站点标题
 # Website title
-title: Hugo NexT
+title: 阿哈吉
 # 主题名称
 # Theme name
 theme: hugo-theme-next
@@ -89,11 +89,11 @@ menus:
       pageref: /posts
       pre: archive
       weight: 3
-    - identifier: commonweal
-      name: 公益 404
-      url: /404.html
-      pre: heartbeat
-      weight: 4
+#   - identifier: commonweal
+#     name: 公益 404
+#     url: /404.html
+#     pre: heartbeat
+#     weight: 4
 
 #-----------------------------------------
 # Hugo NexT 主题参数配置
@@ -125,8 +125,8 @@ params:
 
   # 站点基本信息
   # Site Information Settings
-  author: NexT 主题
-  subtitle: 为 Hugo 打造的主题
+  author: 阿哈吉
+  subtitle: Weniger aber besser
   description: 保持简单的易用性和强大的功能。
   keywords: Hugo,NexT,主题,简单,强大
 
