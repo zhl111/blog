@@ -130,7 +130,7 @@ weight: 1
 - 用 sublime text 在 blog 目录建立文件 `. github /workflows/gh-pages.yml
 	- 其实直接在 `blog` 目录下建立文件夹 `.github`，打开它再建立文件夹 `workflows`，新建文件 `gh-pages.yml`, 文件名可随意。
 	- 拷贝代码，在 hugo 网站 docs→ hugo to github
-	[Host on GitHub | Hugo](https://gohugo.io/hosting-and-deployment/hosting-on-github/)，完全不用任何修改。
+	[Host on GitHub | Hugo](https://gohugo.io/hosting-and-deployment/hosting-on-github/)。
 ```go
 name: github pages
 on:
@@ -150,7 +150,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-          # extended: true
+          extended: true
       - name: Build
         run: hugo --minify
       - name: Deploy
