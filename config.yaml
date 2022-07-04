@@ -743,8 +743,8 @@ params:
         title: Waline
         color: "#27ae60"
         weight: 2
-      - name: giscus
-        title: Giscus
+      - name: Utterances
+        title: Utterances
         color: "#886ce4"
         weight: 1
 
