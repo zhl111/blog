@@ -744,7 +744,7 @@ params:
         color: "#27ae60"
         weight: 2
       - name: Utterances
-        title: Utterances
+        title: Utteranc
         color: "#886ce4"
         weight: 1
 
