@@ -336,7 +336,7 @@ params:
 
     # 版权信息，如不设置将会使用 `author` 变量
     # If not defined, `author` from site information will be used.
-    copyright:
+    # copyright:
 
     # 显示 Hugo 和 NexT 支持
     # Powered by Hugo & NexT
