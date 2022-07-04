@@ -2161,34 +2161,6 @@ header.header {
   }
 }
 
-.footer-inner .vendors-list a {
-  margin-right: 5px;
-}
-
-.footer-inner .vendors-list img {
-  display: inline-block;
-}
-
-.footer-inner .vendors-list a:nth-child(1) img {
-  width: 50px;
-}
-
-@media (max-width: 767px) {
-  .footer-inner .vendors-list a:nth-child(1) img {
-    width: 40px;
-  }
-}
-
-.footer-inner .vendors-list a:nth-child(2) img {
-  width: 43px;
-}
-
-@media (max-width: 767px) {
-  .footer-inner .vendors-list a:nth-child(2) img {
-    width: 33px;
-  }
-}
-
 .use-motion .footer {
   opacity: 0;
 }

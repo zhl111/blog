@@ -30,10 +30,10 @@ if (!window.NexT) window.NexT = {};
     "path"       : "/search.json",
     "localsearch": {"enable":true,"preload":false,"top_n_per_article":1,"trigger":"auto","unescape":false},
     "lang"       : "zh-CN",
-    "permalink"  : "https://a.happy2008.top/about.html",
-    "title"      : "关于 Hugo NexT 组织",
+    "permalink"  : "https://a.happy2008.top/posts/",
+    "title"      : "Posts",
     "isHome"     : false,
-    "isPage"     : true
+    "isPage"     : false
   };
   
   window.CONFIG = new Proxy(siteConfig, {});
