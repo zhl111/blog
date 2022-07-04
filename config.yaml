@@ -455,7 +455,7 @@ params:
   # Easily browse and edit blog source code online.
   postEdit:
     enable: true
-    url: https://github.com/zhl111/blog/tree/gh-pages/connect/
+    url: https://github.com/zhl111/blog/tree/main/connect/
 
 
   # 设置文本的对齐方式
