@@ -12,7 +12,7 @@
 
 # 站点域名，比如： https://a.happy2008.top
 # Website domain, eg: https://hugo-next.eu.org
-baseURL: /
+baseURL: https://a.happy2008.top
 # 站点标题
 # Website title
 title: Hugo NexT
