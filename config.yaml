@@ -853,8 +853,7 @@ params:
     # 更多信息请参考：https://invite.51.la/1NUfGTS1?target=V6
     # 51La Analytics
     # See: https://invite.51.la/1NUfGTS1?target=V6 
-    laId: <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-<script>LA.init({id: "JjynWas2uWHrqWSK",ck: "JjynWas2uWHrqWSK"})</script>
+    laId: "JjynWas2uWHrqWSK"
 
   # TODO
   # Show Views / Visitors of the website / page with busuanzi.
