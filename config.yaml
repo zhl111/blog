@@ -758,7 +758,7 @@ params:
     imgUploader: false
     wordLimit: 200
     requiredMeta: ['nick', 'mail']
-    serverURL: #<your waline server url>
+    serverURL: https://waling-2g9fan8hd-zhl111.vercel.app/
 
   # Artalk 评论插件
   # 更多配置信息请参考：https://artalk.js.org
@@ -783,7 +783,7 @@ params:
   utterances:
     # Github 仓库地址，格式：用户名/仓库名称
     # Github repository owner and name
-    repo: username/repo-name
+    repo: zhl111/blog
     # 问题标题的模式，可选值：pathname | url | title | og:title
     # Available values: pathname | url | title | og:title
     issueTerm: pathname
@@ -853,7 +853,7 @@ params:
     # 更多信息请参考：https://invite.51.la/1NUfGTS1?target=V6
     # 51La Analytics
     # See: https://invite.51.la/1NUfGTS1?target=V6 
-    laId: #<anaytics_id>  
+    #laId: #<anaytics_id>  
 
   # TODO
   # Show Views / Visitors of the website / page with busuanzi.
