@@ -133,7 +133,7 @@ params:
   # 不同尺寸站点图标
   # Different size of favicon
   favicon:
-    icon: /imgs/icons/favicon.ico
+    icon: /imgs/favicon.ico
     small: /imgs/icons/favicon_16x16.png
     medium: /imgs/icons/favicon_32_32.png
     appleTouchIcon: /imgs/icons/apple_touch_icon.png
