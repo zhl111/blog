@@ -740,7 +740,7 @@ params:
     # Modify texts or order for any naves, here are some examples.
     nav:
       - name: giscus
-        title: Waline
+        title: giscus
         color: "#27ae60"
         weight: 2
       - name: Utterances
