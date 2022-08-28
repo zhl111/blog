@@ -739,7 +739,7 @@ params:
     # `name` 参数名可选值：livere | waline | utterances | artalk | giscus
     # Modify texts or order for any naves, here are some examples.
     nav:
-      - name: waline
+      - name: giscus
         title: Waline
         color: "#27ae60"
         weight: 2
