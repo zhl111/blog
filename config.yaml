@@ -726,7 +726,7 @@ params:
     # 可选值：livere | waline | utterances | artalk | giscus
     # Choose a comment system to be displayed by default.
     # Available values: livere | waline | utterances | artalk | giscus 
-    active: utterances
+    active: giscus
     # 让用户自己选择使用评论插件留言
     # 如果设置为 false，将采用 active 参数的那个插件
     # Setting `true` means remembering the comment system selected by 
@@ -801,7 +801,7 @@ params:
   giscus:
     # Github 仓库地址，格式：用户名/仓库名称
     # Github repository owner and name
-    repo: zhl111/blog
+    repo: zhl111/giscus
     # Giscus 生成的仓库 Id
     # Generate repository Id from Giscus
     repoId: #<repo_id>
