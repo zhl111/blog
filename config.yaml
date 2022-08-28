@@ -807,7 +807,7 @@ params:
     repoId: #<repo_id>
     # 讨论区的分类名称
     # Github discussions category
-    category: Announcements
+    category: General
     # 讨论区分类 ID
     # Generate category Id from Giscus
     categoryId: #<category_id>
