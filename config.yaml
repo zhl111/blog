@@ -810,7 +810,7 @@ params:
     category: Comments
     # 讨论区分类 ID
     # Generate category Id from Giscus
-    categoryId: DIC_kwDOH5YZW84CRGXz
+    categoryId: DIC_kwDOH5YZW84CRGqA
     # 帖子上的反应将会显示在评论前
     # The reactions for post will be shown before the comments
     reactions: true
