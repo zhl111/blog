@@ -743,10 +743,10 @@ params:
         title: giscus
         color: "#27ae60"
         weight: 1
-      - name: waline
-        title: 无需注册
-        color: "#886ce4"
-        weight: 2
+      # - name: waline
+      # title: waline
+      # color: "#886ce4"
+      # weight: 2
 
   # Waline 评论插件
   # 更多配置信息请参考：https://waline.js.org/
