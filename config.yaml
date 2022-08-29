@@ -813,7 +813,7 @@ params:
     categoryId: DIC_kwDOH5YZW84CRGqA
     # 帖子上的反应将会显示在评论前
     # The reactions for post will be shown before the comments
-    reactions: false
+    reactions: true
     # 将元数据定期被发送到父页面（被嵌入的页面或控制台，用于调试）
     # Metadata will be sent periodically to the parent window
     emit: false
