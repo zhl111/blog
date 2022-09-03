@@ -801,16 +801,16 @@ params:
   giscus:
     # Github 仓库地址，格式：用户名/仓库名称
     # Github repository owner and name
-    repo: zhl111/giscus
+    repo: zhl111/blog
     # Giscus 生成的仓库 Id
     # Generate repository Id from Giscus
-    repoId: R_kgDOH5YZWw
+    repoId: R_kgDOHkalaA
     # 讨论区的分类名称
     # Github discussions category
     category: Comments
     # 讨论区分类 ID
     # Generate category Id from Giscus
-    categoryId: DIC_kwDOH5YZW84CRGqA
+    categoryId: DIC_kwDOHkalaM4CRM3N
     # 帖子上的反应将会显示在评论前
     # The reactions for post will be shown before the comments
     reactions: true
