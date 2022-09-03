@@ -624,7 +624,7 @@ params:
     enable: true
     # 给所有外部链接加上图标
     # If true, an icon will be attached to each external URL
-    icon: true
+    icon: false
 
   # 谷歌站点验证
   # Google Webmaster tools verification.
