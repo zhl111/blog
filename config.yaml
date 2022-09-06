@@ -824,7 +824,7 @@ params:
     mapping: title
     # 评论输入框的位置，可选值： top | bottom
     # Aavilable value: top | bottom
-    inputPosition: top
+    inputPosition: bottom
     # 主题可选值： light | light_high_contrast | light_protanopia | light_tritanopia | dark | dark_high_contrast | dark_protanopia | dark_tritanopia | dark_dimmed | transparent_dark | preferred_color_scheme
     # Available values: light | light_high_contrast | light_protanopia | light_tritanopia | dark | dark_high_contrast | dark_protanopia | dark_tritanopia | dark_dimmed | transparent_dark | preferred_color_scheme
     theme: preferred_color_scheme
