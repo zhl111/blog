@@ -1,6 +1,0 @@
-# Ignore files in Hugo NexT theme
-
-exampleSite/
-!exampleSite/content
-!exampleSite/start.sh
-!exampleSite/config.yaml
