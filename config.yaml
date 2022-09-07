@@ -120,7 +120,7 @@ params:
 
   # 开启暗模式
   # Dark Mode
-  darkmode: false
+  darkmode: true
 
 
   # 站点基本信息
@@ -827,7 +827,7 @@ params:
     inputPosition: bottom
     # 主题可选值： light | light_high_contrast | light_protanopia | light_tritanopia | dark | dark_high_contrast | dark_protanopia | dark_tritanopia | dark_dimmed | transparent_dark | preferred_color_scheme
     # Available values: light | light_high_contrast | light_protanopia | light_tritanopia | dark | dark_high_contrast | dark_protanopia | dark_tritanopia | dark_dimmed | transparent_dark | preferred_color_scheme
-    theme: light_protanopia
+    theme: preferred_color_scheme
 
 
   # ---------------------------------------------------------------
