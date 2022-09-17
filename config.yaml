@@ -127,7 +127,7 @@ menus:
       weight: 3
     - identifier: archives
       name: 归档
-      pageref: /posts
+      pageref: /archives
       pre: archive
       weight: 3
 #   - identifier: commonweal
