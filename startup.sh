@@ -18,6 +18,6 @@ Documentation: https://hugo-next.eu.org
 EOT
 }
 
-next `cat ../VERSION`
+next `cat themes/next/VERSION`
 
-hugo server -D -t ../.. --port 1414 --panicOnWarning
+hugo server --port 1414 --panicOnWarning
