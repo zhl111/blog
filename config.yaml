@@ -39,7 +39,7 @@ markup:
     renderer:
       unsafe: true
   highlight:
-      # codeFences: true
+    # codeFences: true
     # lineNos: true
     # lineNumbersInTable: true
     # noClasses: true
@@ -49,7 +49,7 @@ markup:
     # # More: https://xyproto.github.io/splash/docs/all.html 
     # style: "monokai"
     anchorLineNos: true
-      codeFences: true
+    codeFences: true
     guessSyntax: true
     hl_Lines: ""
     hl_inline: false
@@ -107,6 +107,7 @@ enableRobotsTXT: true
 # 强制输出时压缩文件
 # Compress all files when output
 minify:
+  minifyOutput: true
 
 #--------------------------------------
 # 菜单配置说明
@@ -307,7 +308,7 @@ params:
       # 组件类型，可选值为： 51la, busuanzi
       # 使用51la时需要注册账号：https://invite.51.la/1NUfGTS1?target=V6
       # Plguin value is: 51la, busuzazi
-      plugin:busuzazi
+      plugin: busuzazi
 
   # 社交链接地址
   # 用法： `Key: 名称 || 链接地址 || 图标`
@@ -367,7 +368,7 @@ params:
   # Table of Contents in the Sidebar
   # Front-matter variable (nonsupport wrap expand_all).
   toc:
-    enable: true
+    enable: false
     # 自动设置列表的数字
     # Automatically add list number to toc.
     number: true
@@ -786,7 +787,7 @@ params:
     # 可选值：livere | waline | utterances | artalk | giscus
     # Choose a comment system to be displayed by default.
     # Available values: livere | waline | utterances | artalk | giscus 
-    active: giscus
+    active: waline
     # 让用户自己选择使用评论插件留言
     # 如果设置为 false，将采用 active 参数的那个插件
     # Setting `true` means remembering the comment system selected by 
@@ -801,12 +802,12 @@ params:
     nav:
       - name: giscus
         title: giscus
-        color: "#27ae60"
+        color: "#886ce4"
         weight: 1
-      # - name: waline
-      # title: waline
-      # color: "#886ce4"
-      # weight: 2
+      - name: waline
+        title: waline
+        color: "#27ae60"
+        weight: 2
 
   # Waline 评论插件
   # 更多配置信息请参考：https://waline.js.org/
@@ -820,7 +821,7 @@ params:
     imgUploader: false
     wordLimit: 200
     requiredMeta: ['nick', 'mail']
-        reaction: true
+    reaction: true
     reactionText: [ '点赞', '踩一下', '得意', '不屑', '尴尬', '睡觉']
     reactionTitle: "你认为这篇文章怎么样？"
     serverURL: https://waling-2g9fan8hd-zhl111.vercel.app/

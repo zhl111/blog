@@ -1,0 +1,6 @@
+# Ignore Files
+
+.hugo_build.lock
+
+public/
+resources/
