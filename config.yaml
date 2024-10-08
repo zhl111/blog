@@ -469,7 +469,7 @@ params:
   # Post meta display settings
   postMeta:
     # 是否开启各元素的文字显示 
-      itemText: true
+    itemText: true
     created: true
     updated:
       enable: true
