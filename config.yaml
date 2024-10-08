@@ -413,13 +413,13 @@ params:
 
     # 显示 Hugo 和 NexT 支持
     # Powered by Hugo & NexT
-    # powered: true
+    powered: true
 
     # 国内 ICP 备案和公安网备信息
     # Beian ICP and gongan information for Chinese users. 
     # See: https://beian.miit.gov.cn, http://www.beian.gov.cn
     beian:
-      enable: true
+      enable: false
       # ICP 备案的具体信息
       icp: 粤ICP备 18047355-1 号
       # 公安网备的省份简称
@@ -442,13 +442,11 @@ params:
             url: /imgs/vendors/vercel.svg
             width: 50
           link: https://vercel.com
-        - name: 又拍云
-          image: 
-            url: /imgs/vendors/upyun.png
-            width: 43
-          link: https://upyun.com
-        - name: Webify
-          link: https://webify.cloudbase.net
+        - name: Github
+          link: https://github.com
+          image:
+            url: /imgs/vendors/github.svg
+            width: 14
 
 
   # ---------------------------------------------------------------
